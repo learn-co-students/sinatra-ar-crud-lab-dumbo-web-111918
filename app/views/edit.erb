@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action= "/articles/<%=@id%>" method="post">
+
+      <input id="hidden" type="hidden" name="_method" value="PATCH">
+
+      <p>
+        title <%= Article.find(@id).title %>
+        content <%= Article.find(@id).content %>
+      </p>
+
+      new title : <input type="text" name="title" value="">
+      new content : <input type="text" name="content" value="">
+      <input type="submit">
+    </form>
+  </body>
+</html>
