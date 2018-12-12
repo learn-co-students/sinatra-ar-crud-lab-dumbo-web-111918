@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form <%= "action=/articles/#{@id} method=POST" %> >
+		<p>New Title:<%="<input type=text name=title value=#{@title}"%></p>
+			<br>
+		<p>New Content:<%="<input type=text name=content value=#{@content}"%></p>
+		<input type="submit">
+		<input id="hidden" type="hidden" name="_method" value="PATCH">
+	</form>
+</body>
+</html>
