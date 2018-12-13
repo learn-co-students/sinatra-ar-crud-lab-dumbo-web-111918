@@ -1,0 +1,15 @@
+<a href= "articles/new"> Create a new article!</a>
+
+<h1>This is the list of articles</h1>
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+
+      <a href= "/articles/<%= article.id %>">
+      <%= "#{article.title}  | " "ID: #{article.id}"%>
+    </a>
+    </li>
+
+  <% end %>
+
+</ul>

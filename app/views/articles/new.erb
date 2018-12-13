@@ -1,0 +1,15 @@
+<form action="/articles" method="POST">
+  <h1> This is a magazine app?</h1>
+  <ul>
+    <li>
+  Title:
+  <input type="text" name="article[title]" value="<%= @article.title %>">
+  </li> <li>
+  Content:
+  <input type="text" name="article[content]" value="<%= @article.content %>">
+  </li>
+  </ul>
+
+  <input type="submit">
+
+</form>
